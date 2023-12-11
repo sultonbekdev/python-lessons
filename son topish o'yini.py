@@ -22,7 +22,7 @@ def sontop(x=10):
         else:
             break
     return taxminlar    
-    print(f"Tabrikleymiz. {taxminlar} taxmin bilan  topdingiz!")
+    print("Tabrikleymiz. taxmin bilan  topdingiz!")
     
 
 def sontop_pc(x=10):
