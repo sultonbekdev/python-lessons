@@ -1,2 +1,6 @@
-# python-lessons
-Ushbu repasitoryda python darslariga oid codlar jamlangan.
+# Ўзбек тилидаги сўзлар рўйхати
+Сўзлар матн (uzwords.txt) ва Python list (uzwords.py) кўринишида берилган.<br/>
+Рўйхатни тузишда қуйидаги реподан фойдаланилди: https://github.com/kodchi/uzbek-words<br/>
+Юқоридаги реподан фарқли равишда рўйхатда фақат от сўз туркумига оид сўзлар жамланган.
+
+Рўйҳатни юклаб олиш учун юқорида Code->Download Zip тугмасини босинг.
