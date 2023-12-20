@@ -33,9 +33,29 @@ class Avto:
         else:
             print("Moshinani km kamaytirib bo'lmaydi.")
             
-avto1=Avto("GM", "Malibu", "qora", "2019", 34000)    
+    def __repr__(self):
+        return f"Avto: {self.rang} {self.make} {self.model}"
+    
+    def __lt__(self,y):
+        return self.narh<y.narh
+        
+            
+avto1=Avto("GM", "Malibu", "qora", 2019, 34000)
+avto2=Avto("GM", "Lacetti", "oq", 2019, 24000)    
 avto1.add_km(1100)
 print(avto1.get_km())
+
+class Avtosalon:
+    def __init__(self,name):
+        self.name=name
+        self.avtolar=[]
+        
+    def __repr__(self):
+        return f"{self.name} avtosaloni"
+    
+salon1=Avtosalon("SultanAvto")  
+print(salon1)  
+    
     
     
     
