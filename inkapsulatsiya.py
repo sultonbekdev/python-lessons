@@ -39,11 +39,6 @@ class Avto:
     def __lt__(self,y):
         return self.narh<y.narh
         
-            
-avto1=Avto("GM", "Malibu", "qora", 2019, 34000)
-avto2=Avto("GM", "Lacetti", "oq", 2019, 24000)    
-avto1.add_km(1100)
-print(avto1.get_km())
 
 class Avtosalon:
     def __init__(self,name):
@@ -53,8 +48,20 @@ class Avtosalon:
     def __repr__(self):
         return f"{self.name} avtosaloni"
     
-salon1=Avtosalon("SultanAvto")  
-print(salon1)  
+    def  add_avto(self,avto):
+        if isinstance(avto, Avto):
+            self.avtolar.append(avto)
+        else:
+            print("Avto obyektini kiriting!")
+            
+avto1=Avto("GM", "Malibu", "qora", 2019, 34000)
+avto2=Avto("GM", "Lacetti", "oq", 2019, 24000)  
+avto3=Avto("Toyota", "Carolla", "sariq", 2020,40000)
+salon1.add_avto(avto1,avto2,avto3)  
+    # for avto in [avto1,avto2,avto3]:
+    #     salon1.add_avto(avto)  
+        
+
     
     
     
